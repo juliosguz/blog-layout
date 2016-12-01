@@ -1,0 +1,34 @@
+{
+  "name": "initial-layout",
+  "version": "1.9.0",
+  "description": "Start quickly your web project with the best web tools.",
+  "keywords": [
+    "gulp",
+    "sass",
+    "stylus",
+    "angularjs"
+  ],
+  "author": "Julio Silva <julio.sguz@gmail.com>",
+  "repository" : {
+      "type" : "git",
+      "url" : "https://github.com/juliosguz/initial-layout"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.11.1",
+    "del": "^2.2.0",
+    "gulp": "^3.9.0",
+    "gulp-autoprefixer": "^3.1.0",
+    "gulp-changed": "^1.3.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-csso": "^2.0.0",
+    "gulp-if": "^2.0.0",
+    "gulp-load-plugins": "^1.2.0",
+    "gulp-sourcemaps": "^1.6.0",
+    "gulp-stylus": "^2.3.0",
+    "gulp-uglify": "^2.0.0",
+    "opn": "^4.0.0",
+    "require-dir": "^0.3.0",
+    "run-sequence": "^1.1.5",
+    "webpack-stream": "^3.1.0"
+  }
+}
