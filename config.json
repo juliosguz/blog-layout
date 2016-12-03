@@ -1,5 +1,5 @@
 {
-	"spa" : true,
+	"spa" : false,
 	"projectDirectory" : "client",
 	"cssDirectory" : "css",
 	"cssRawBundle" : "css/main.styl",

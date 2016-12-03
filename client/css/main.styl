@@ -12,6 +12,11 @@ body
 
 .header
   background-color primary_color
+  background-image url(https://firebasestorage.googleapis.com/v0/b/juliosguz-ee474.appspot.com/o/site%2Fbackground-medium.jpg?alt=media&token=0754cd2d-3ff0-490c-8209-188e17a5422f)
+  background-repeat no-repeat
+  background-size cover
+  background-position center
+  border-bottom 5px solid primary_color
 
 .information
   align-items center
@@ -20,7 +25,6 @@ body
   flex-direction column
   padding 2em 0 3em
   &__img
-    border 3px solid white
     border-radius 60px
     overflow hidden
     font-size 0
@@ -41,10 +45,9 @@ body
       font-size 1em
       margin 0
 .navigation
-  background-color text_color
-  box-shadow 0 4px 4px rgba(0,0,0,0.24),0 0 4px rgba(0,0,0,0.12)
+  background-color rgba(0,0,0,0.1)
   padding 1em 0
-  margin-top -20px
+
 .menu
   justify-content center
   display flex
@@ -55,7 +58,7 @@ body
   padding 0
   li > a
     color white
-    margin 0.8em
+    margin 1.8em
     text-decoration none
 
 .posts-container
@@ -109,10 +112,12 @@ body
     max-width 900px
 
   .menu
-    font-size 1em
+    font-size 1.1em
 
   .information
     flex-direction row
+    height 70vh
+    padding 0
     &__text
       text-align left
       h2
@@ -126,5 +131,8 @@ body
       width 49%
 
 @media only screen and (min-width: 900px)
+  .header
+    background-image url(https://firebasestorage.googleapis.com/v0/b/juliosguz-ee474.appspot.com/o/site%2Fbackground-large.jpg?alt=media&token=001b3ba2-87bf-4158-a854-8742b1b440c1)
+
   .posts-container
     padding 0
