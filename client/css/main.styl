@@ -28,8 +28,8 @@ body
     border-radius 60px
     overflow hidden
     font-size 0
-    height 100px
-    width 100px
+    height 120px
+    width 120px
     img
       width 100%
   &__text
@@ -58,7 +58,7 @@ body
   padding 0
   li > a
     color white
-    margin 1.8em
+    margin 1.3em
     text-decoration none
 
 .posts-container
@@ -106,6 +106,27 @@ body
     margin 0
     padding 0 1em
 
+.internal-post
+  &__img
+    font-size 0
+    img
+      font-size 1rem
+      width 100%
+  &__container
+    padding 1em
+
+.social
+  display flex
+  list-style none
+  padding 0
+  margin 1em 0
+  &__link
+    color white
+    font-size 20px
+    margin-right 0.5em
+    text-decoration none
+
+
 @media only screen and (min-width: 640px)
   .wrapper
     margin 0 auto
@@ -122,6 +143,8 @@ body
       text-align left
       h2
         margin 0
+    &--internal
+      height 20vh
 
   .posts-container
     display flex
