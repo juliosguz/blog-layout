@@ -199,7 +199,19 @@
 			<p class="footer__copy">&copy; 2016 - Julio Silva</p>
 		</div>
 	</footer>
+	<script type="text/javascript">
+		if ('serviceWorker' in navigator) {
+			navigator.serviceWorker.register('service-worker.js')
+			.then(function (registration) {
+				console.log('service worker is registered!');
+			})
+			.catch(function (error) {
+				console.log('service worker registration failed ', error);
+			});
 
-	<script src="https://use.fontawesome.com/5e232ef2cc.js"></script>
+		} else {
+			console.log('service worker is not supported.');
+		}
+	</script>
 </body>
 </html>
