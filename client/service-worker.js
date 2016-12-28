@@ -9,30 +9,47 @@ var filesToCache = [
 ];
 
 // Install listener
-self.addEventListener('install', function (event) {
-  console.log('Event: Install');
+self.addEventListener('install', function (event) {  
   event.waitUntil(
-    caches.open(cacheName).then(function(cache) {
-      return cache.addAll(filesToCache);
-    })
+    caches.open(cacheName)
+      .then(function(cache) {
+        console.log('[INSTALL] Adding all core files to cache');
+        return cache.addAll(filesToCache);
+      })
+      .then(function() {
+        console.log('[INSTALL] All required files have been cached');
+        return self.skipWaiting();
+      })
   );
 });
-
-
-// Activate listener
-self.addEventListener('activate', function (event) {
-  console.log('Event: Activate');
-  // event.waitUntil();
-});
-
 
 // Fetch listener
 self.addEventListener('fetch', function (event) {
-  console.log('Event: Fetch', event.request.url);
-
   event.respondWith(
-    caches.match(event.request).then(function(response) {
-      return response || fetch(event.request);
-    })
+    caches.match(event.request)
+      .then(function(response) {
+
+        if( response ) {
+          console.log('[FETCH] Returnig from Cache', event.request.url);
+          return response;
+        } 
+
+        console.log('[FETCH] Returnig from Server:', event.request.url);
+        return fetch(event.request);
+        
+      })
+      .catch(function(error) {
+        console.log(error);
+      })
   );
 });
+
+// Activate listener
+self.addEventListener('activate', function (event) {
+  console.log('[ACTIVATE] Activating ServiceWorker!');
+
+  console.log('[ACTIVATE] Claiming this ServiceWorker!');
+  event.waitUntil(self.clients.claim());
+});
+
+
