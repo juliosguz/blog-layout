@@ -13,6 +13,11 @@ body
   background-color primary_color
   color white
 
+.wrapper
+  display block
+  margin 0 1em
+  padding 1em 0
+
 .logo
   display block
   color white
@@ -24,17 +29,26 @@ body
   span
     vertical-align sub
 
+.page
+  &__title
+    border 4px solid white
+    color white
+    display inline-block
+    font-size 25px
+    margin 0
+    padding .8em .4em .6em
+
 .header
   position fixed
   width 100%
   &--blue
     background-color primary_color
+    box-shadow 0 4px 4px rgba(0,0,0,0.24),0 0 4px rgba(0,0,0,0.12)
 
 .navigation
   align-items center
   display flex
   justify-content space-between
-  margin 1em
 
 .menu
   justify-content center
@@ -51,7 +65,7 @@ body
   &__active
     color rgba(255,255,255,1)
 
-.presentation
+.home-presentation
   background-color primary_color
   background-image url(../images/background.jpg)
   background-repeat no-repeat
@@ -78,10 +92,9 @@ body
       font-size .76em
       margin 0
 
-.general-bio
+.home-biography
   &__text
     font-size 18px
-    padding 4em 1.5em
     p
       line-height 1.5em
     a
@@ -89,6 +102,19 @@ body
       color white
       padding .2em .2em 0 
       text-decoration none
+
+.home-projects
+  background-color primary_color
+  padding 2em 0
+  &__list
+    display flex
+    flex-direction column
+
+.home-project
+  color white
+  margin 1em 0
+  &__description
+    font-family secundaryFont
 
 
 
@@ -137,34 +163,11 @@ body
     margin 0
     padding 0 1em
 
-.internal-post
-  &__img
-    font-size 0
-    img
-      font-size 1rem
-      width 100%
-  &__container
-    padding 1em
-
-.social
-  display flex
-  list-style none
-  padding 0
-  margin 1em 0
-  &__link
-    color white
-    font-size 20px
-    margin-right 0.5em
-    text-decoration none
-
 
 @media only screen and (min-width: 640px)
   .wrapper
     margin 0 auto
     max-width 900px
-
-  .menu
-    font-size 1.1em
 
   .information
     &__text
@@ -174,16 +177,6 @@ body
     &--internal
       height 20vh
 
-  .posts-container
-    display flex
-    flex-wrap wrap
-    justify-content: space-between;
-    .post
-      width 49%
-
 @media only screen and (min-width: 900px)
   .information
     background-image url(../images/background.jpg)
-
-  .posts-container
-    padding 0
