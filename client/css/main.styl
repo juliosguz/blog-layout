@@ -1,16 +1,13 @@
 @import '_normalize'
 @import 'config'
 
-primaryFont = 'ADAM.CG PRO', sans-serif 
-secundaryFont = 'Assistant', sans-serif
-
 body
   font-family primaryFont
-  color text_color
+  color textPrimaryColor
   font-size 16px
 
 ::selection
-  background-color primary_color
+  background-color primaryColor
   color white
 
 .wrapper
@@ -42,7 +39,7 @@ body
   position fixed
   width 100%
   &--blue
-    background-color primary_color
+    background-color primaryColor
     box-shadow 0 4px 4px rgba(0,0,0,0.24),0 0 4px rgba(0,0,0,0.12)
 
 .navigation
@@ -66,7 +63,7 @@ body
     color rgba(255,255,255,1)
 
 .home-presentation
-  background-color primary_color
+  background-color primaryColor
   background-image url(../images/background.jpg)
   background-repeat no-repeat
   background-size cover
@@ -98,13 +95,13 @@ body
     p
       line-height 1.5em
     a
-      background-color primary_color
+      background-color primaryColor
       color white
       padding .2em .2em 0 
       text-decoration none
 
 .home-projects
-  background-color primary_color
+  background-color primaryColor
   padding 2em 0
   &__list
     display flex
@@ -114,7 +111,7 @@ body
   color white
   margin 1em 0
   &__description
-    font-family secundaryFont
+    font-family secondaryFont
 
 
 
@@ -126,7 +123,7 @@ body
 .post
   box-shadow 0 4px 4px rgba(0,0,0,0.24),0 0 4px rgba(0,0,0,0.12)
   &__link
-    color text_color
+    color textPrimaryColor
     display block
     text-decoration none
   &__img
@@ -151,12 +148,12 @@ body
     border-radius: 5px
     padding 0.1em 0.5em
     &--firebase
-      background firebase_color
+      background tagFirebaseColor
     &--angular
-      background angular_color
+      background tagAngularColor
 
 .footer
-  background-color text_color
+  background-color textPrimaryColor
   color white
   padding 1em 0
   &__copy
