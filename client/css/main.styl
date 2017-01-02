@@ -1,65 +1,96 @@
 @import '_normalize'
-
 @import 'config'
 
+primaryFont = 'ADAM.CG PRO', sans-serif 
+secundaryFont = 'Assistant', sans-serif
+
 body
-  font-family: 'Roboto', sans-serif;
+  font-family primaryFont
   color text_color
   font-size 16px
 
 ::selection
   background-color primary_color
+  color white
+
+.logo
+  display block
+  color white
+  height 44px
+  border 4px solid white
+  font-size 35px
+  width 44px
+  text-align center
+  span
+    vertical-align sub
 
 .header
-  background-color primary_color
-  background-image url(https://firebasestorage.googleapis.com/v0/b/juliosguz-ee474.appspot.com/o/site%2Fbackground-medium.jpg?alt=media&token=0754cd2d-3ff0-490c-8209-188e17a5422f)
-  background-repeat no-repeat
-  background-size cover
-  background-position center
-  border-bottom 5px solid primary_color
+  position fixed
+  width 100%
+  &--blue
+    background-color primary_color
 
-.information
+.navigation
   align-items center
   display flex
-  justify-content center
-  flex-direction column
-  padding 2em 0 3em
-  &__img
-    border-radius 60px
-    overflow hidden
-    font-size 0
-    height 120px
-    width 120px
-    img
-      width 100%
-  &__text
-    color white
-    margin-left 10px
-    text-align center
-    h2
-      font-weight 700
-      font-size 1.8em
-      margin 0.5em 0
-    p
-      font-weight 300
-      font-size 1em
-      margin 0
-.navigation
-  background-color rgba(0,0,0,0.1)
-  padding 1em 0
+  justify-content space-between
+  margin 1em
 
 .menu
   justify-content center
   display flex
-  font-size 0.8em
+  font-size 0.9em
   font-weight 300
   list-style none
   margin 0
   padding 0
-  li > a
-    color white
-    margin 1.3em
+  &__link
+    color rgba(255,255,255,0.5)
+    margin-left 1rem
     text-decoration none
+  &__active
+    color rgba(255,255,255,1)
+
+.presentation
+  background-color primary_color
+  background-image url(../images/background.jpg)
+  background-repeat no-repeat
+  background-size cover
+  background-position center
+  height 100vh  
+  &__hover
+    background-color rgba(0,0,0,.5)
+    height 100%
+  &__wrapper
+    align-items center    
+    display flex
+    flex-direction column      
+    height 100%
+    justify-content center    
+  &__text
+    color white
+    text-align center
+    max-width 250px
+    h2      
+      font-size 4.687em
+      margin 0
+    p
+      font-size .76em
+      margin 0
+
+.general-bio
+  &__text
+    font-size 18px
+    padding 4em 1.5em
+    p
+      line-height 1.5em
+    a
+      background-color primary_color
+      color white
+      padding .2em .2em 0 
+      text-decoration none
+
+
 
 .posts-container
   padding 0 1em
@@ -136,9 +167,6 @@ body
     font-size 1.1em
 
   .information
-    flex-direction row
-    height 70vh
-    padding 0
     &__text
       text-align left
       h2
@@ -154,8 +182,8 @@ body
       width 49%
 
 @media only screen and (min-width: 900px)
-  .header
-    background-image url(https://firebasestorage.googleapis.com/v0/b/juliosguz-ee474.appspot.com/o/site%2Fbackground-large.jpg?alt=media&token=001b3ba2-87bf-4158-a854-8742b1b440c1)
+  .information
+    background-image url(../images/background.jpg)
 
   .posts-container
     padding 0

@@ -1,6 +1,8 @@
+.DS_Store
+.firebaserc
+npm-debug.log
+node_modules
 .temporal
 build
-node_modules
-app/vendor
-npm-debug.log
-.firebaserc
+
+

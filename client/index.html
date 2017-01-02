@@ -21,58 +21,60 @@
 	<meta name="twitter:image" content="">
 
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" />
+	<link href="https://fonts.googleapis.com/css?family=Assistant:300" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 <body>
-	<header class="header">
+	<header class="header otro andOther" id="header">
 		<div class="wrapper">
-			<div class="information">
-				<picture class="information__img">
-					<img src="https://firebasestorage.googleapis.com/v0/b/juliosguz-ee474.appspot.com/o/personal%2Fjulio-silva.png?alt=media&token=099ce39e-af60-45d1-9ecb-b6b3ec46c087" alt="Julio Silva"/>
-				</picture>
-				<div class="information__text">
-					<h2>Soy Julio Silva</h2>
-					<p>Desarrollador, expositor, mentor y fotografo aficionado.</p>
-					<ul class="social">
-						<li>
-							<a href="https://bo.linkedin.com/in/juliosguz" target="_blank" class="social__link">
-								<span class="icon-linkedin"></span>
-							</a>
-						</li>
-						<li>
-							<a href="https://github.com/juliosguz" target="_blank" class="social__link">
-								<span class="icon-github"></span>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.facebook.com/juliosguz" target="_blank" class="social__link">
-								<span class="icon-facebook"></span>
-							</a>
-						</li>
-						<li>
-							<a href="https://twitter.com/juliosguz" target="_blank" class="social__link">
-								<span class="icon-twitter"></span>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+      <nav class="navigation" >
+        <a class="logo">
+          <span>JS</span>
+        </a>
+        <ul class="menu">
+          <li>
+            <a href="/articles" class="menu__link menu__active" >Blog</a>
+          </li>
+          <li>
+            <a href="/about-me" class="menu__link">Acerca de mí</a>
+          </li>
+        </ul>
+      </nav>
 		</div>
-		<nav class="navigation" >
-			<ul class="menu">
-				<li>
-					<a href="/articles">Artículos</a>
-				</li>
-				<li>
-					<a href="/about-me">Acerca de mí</a>
-				</li>
-				<li>
-					<a href="/presentations">Presentaciones</a>
-				</li>
-			</ul>
-		</nav>
 	</header>
+
+  <section class="presentation">
+    <div class="presentation__hover">
+      <div class="presentation__wrapper wrapper">
+        <div class="presentation__text">
+          <h2>Julio Silva</h2>
+          <p>Desarrollador, expositor, mentor y fotografo aficionado</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="general-bio">
+    <div class="wrapper">
+      <div class="general-bio__text">
+        <p>
+          hola!
+        </p>
+        <p>
+          soy desarrollador de productos de software, iniciando mi carrera profesional 
+  desde el 2009. soy tech lead de <a href="">moka mint</a> y organizer oficial del <a href="">gdg cochabamba</a>.
+        </p>
+        <p>
+          he participado como expositor sobre desarrollo y mentor desde el 2015, revisa 
+  algunas de mis <a href="">exposiciones</a>.
+        </p>
+        <p>
+          y desde el 2014 soy aficionado a la fotografia y creador de contenido audiovisual 
+  en <a href="">click izquierdo</a>, <a href="">the gamer day</a> y ahora mi <a href="">canal personal</a>. 
+        </p>
+      </div>
+    </div>
+  </section>
 
 
 	<div class="wrapper">
@@ -196,22 +198,45 @@
 
 	<footer class="footer">
 		<div class="wrapper">
+      <ul class="social">
+						<li>
+							<a href="https://bo.linkedin.com/in/juliosguz" target="_blank" class="social__link">
+								<span class="icon-linkedin"></span>
+							</a>
+						</li>
+						<li>
+							<a href="https://github.com/juliosguz" target="_blank" class="social__link">
+								<span class="icon-github"></span>
+							</a>
+						</li>
+						<li>
+							<a href="https://www.facebook.com/juliosguz" target="_blank" class="social__link">
+								<span class="icon-facebook"></span>
+							</a>
+						</li>
+						<li>
+							<a href="https://twitter.com/juliosguz" target="_blank" class="social__link">
+								<span class="icon-twitter"></span>
+							</a>
+						</li>
+					</ul>
 			<p class="footer__copy">&copy; 2016 - Julio Silva</p>
 		</div>
 	</footer>
+  <script src="app/bundle.js" ></script>
 	<script type="text/javascript">
-		if ('serviceWorker' in navigator) {
-			navigator.serviceWorker.register('service-worker.js')
-			.then(function (registration) {
-				console.log('service worker is registered!');
-			})
-			.catch(function (error) {
-				console.log('service worker registration failed ', error);
-			});
+		// if ('serviceWorker' in navigator) {
+		// 	navigator.serviceWorker.register('service-worker.js')
+		// 	.then(function (registration) {
+		// 		console.log('service worker is registered!');
+		// 	})
+		// 	.catch(function (error) {
+		// 		console.log('service worker registration failed ', error);
+		// 	});
 
-		} else {
-			console.log('service worker is not supported.');
-		}
+		// } else {
+		// 	console.log('service worker is not supported.');
+		// }
 	</script>
 </body>
 </html>
