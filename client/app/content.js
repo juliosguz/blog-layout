@@ -1,5 +1,9 @@
 document.addEventListener('DOMContentLoaded', function(event) {
   function controlClassForBar(state) {
+
+    if ( document.getElementById('home').className.length === 0 ) {
+      return;
+    }
     
     function getClasses(element) {
       var elementClasses = document.getElementById(element).className;
@@ -22,6 +26,7 @@ document.addEventListener('DOMContentLoaded', function(event) {
         return false
       }
     }
+    
 
     var headerModifier = 'header--blue',
       headerClass = 'header';

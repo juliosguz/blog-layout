@@ -1,93 +1,134 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-	<title>Initial Layout</title>
+	<title>Julio Silva - Desarrollador, expositor, mentor y fotografo aficionado.</title>
+	<meta name="description" content="">
+	<meta name="author" content="Julio Silva">
+	<link rel="canonical" href="">
+	<meta property="og:locale" content="es_MX">
+	<meta property="og:type" content="website">
+	<meta property="og:title" content="">
+	<meta property="og:description" content="">
+	<meta property="og:url" content="">
+	<meta property="og:site_name" content="Julio Silva">
+	<meta property="og:image" content="">
+	<meta property="og:publisher" content="https://www.facebook.com/juliosguz">
+
+	<meta name="twitter:card" content="summary">
+	<meta name="twitter:site" content="@juliosguz">
+	<meta name="twitter:title" content="">
+	<meta name="twitter:description" content="\">
+	<meta name="twitter:image" content="">
+
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0" />
-	<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Assistant:300,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/main.css" />
 </head>
 <body>
-	<header class="header">
+	<header class="header header--blue" id="header">
 		<div class="wrapper">
-			<div class="information information--internal">
-				<picture class="information__img">
-					<img src="https://firebasestorage.googleapis.com/v0/b/juliosguz-ee474.appspot.com/o/personal%2Fjulio-silva.png?alt=media&token=099ce39e-af60-45d1-9ecb-b6b3ec46c087" alt="Julio Silva"/>
-				</picture>
-				<div class="information__text">
-					<h2>Soy Julio Silva</h2>
-					<p>Desarrollador, expositor, mentor y fotografo aficionado.</p>
-					<ul class="social">
-						<li>
-							<a href="https://bo.linkedin.com/in/juliosguz" target="_blank" class="social__link">
-								<span class="icon-linkedin"></span>
-							</a>
-						</li>
-						<li>
-							<a href="https://github.com/juliosguz" target="_blank" class="social__link">
-								<span class="icon-github"></span>
-							</a>
-						</li>
-						<li>
-							<a href="https://www.facebook.com/juliosguz" target="_blank" class="social__link">
-								<span class="icon-facebook"></span>
-							</a>
-						</li>
-						<li>
-							<a href="https://twitter.com/juliosguz" target="_blank" class="social__link">
-								<span class="icon-twitter"></span>
-							</a>
-						</li>
-					</ul>
-				</div>
-			</div>
+      <nav class="navigation" >
+        <a class="logo">
+          <span>JS</span>
+        </a>
+        <ul class="menu">
+          <li>
+            <a href="/articles" class="menu__link menu__active" >Blog</a>
+          </li>
+          <li>
+            <a href="/about-me" class="menu__link">Acerca de mí</a>
+          </li>
+        </ul>
+      </nav>
 		</div>
-		<nav class="navigation" >
-			<ul class="menu">
-				<li>
-					<a href="/articles">Artículos</a>
-				</li>
-				<li>
-					<a href="/about-me">Acerca de mí</a>
-				</li>
-				<li>
-					<a href="/presentations">Presentaciones</a>
-				</li>
-			</ul>
-		</nav>
 	</header>
 
-
-
-	<main>
+  <article class="post">
     <div class="wrapper">
-			<article class="internal-post">
-          <picture class="internal-post__img" >
-            <img src="images/angular.png" alt=""  >
-          </picture>
-					<div class="internal-post__container">
-	          <h2 class="internal-post__title">Enlazar dominio a Firebase</h2>
-	          <div class="internal-post__details">
-	            <span class="internal-post__date" >Hace una hora</span>
-	            <div class="tags internal-post__tags">
-	              <span class="tags__item tags__item--firebase" >Firebase</span>
-	              <span class="tags__item tags__item--angular" >Angular</span>
-	            </div>
-	          </div>
-						<div class="internal-post__content">
-							<p>
-								Uno de los principales problemas al tratar de enlazar tu proyecto con un dominio propio es que ademas agregar muchas cosas extra...
-							</p>
-						</div>
-					</div>
-			</article>
-    </div>
-	</main>
+      <figure class="post__image" >
+        <img src="images/code.jpg" alt="">
+        <figcaption>
+          <h1 class="post__title" >Como organizar tu proyecto para la web</h1>
+          <div class="post__information">
+            <div class="post__tags">
 
+            </div>
+            <div class="post__creation-date">
+
+            </div>
+          </div>          
+        </figcaption>
+      </figure>
+      <div class="post__content">
+
+      </div>      
+    </div>
+  </article>
+  
+
+  
+
+
+
+
+  
 
 	<footer class="footer">
 		<div class="wrapper">
-			<p class="footer__copy">&copy; 2016 - Julio Silva</p>
+      <div class="footer__top-area">
+        <div class="footer__social">
+          <h3>Me puedes encontrar en</h3>
+          <ul class="social">
+            <li>
+              <a href="https://bo.linkedin.com/in/juliosguz" target="_blank" class="social__link">
+                <span class="icon-linkedin"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://github.com/juliosguz" target="_blank" class="social__link">
+                <span class="icon-github"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://www.facebook.com/juliosguz" target="_blank" class="social__link">
+                <span class="icon-facebook"></span>
+              </a>
+            </li>
+            <li>
+              <a href="https://twitter.com/juliosguz" target="_blank" class="social__link">
+                <span class="icon-twitter"></span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer__contact">
+          <h3>puedes escribirme a</h3>
+          <a href="mailto:julio.sguz@gmail.com">julio.sguz@gmail.com</a>
+        </div>
+      </div>
+      <div class="footer__bottom-area">
+        <a class="logo">
+          <span>JS</span>
+        </a>
+        <p>Todos los derechos reservados - Julio Silva</p>
+      </div>      
 		</div>
 	</footer>
+  <script src="app/bundle.js" ></script>
+	<script type="text/javascript">
+		// if ('serviceWorker' in navigator) {
+		// 	navigator.serviceWorker.register('service-worker.js')
+		// 	.then(function (registration) {
+		// 		console.log('service worker is registered!');
+		// 	})
+		// 	.catch(function (error) {
+		// 		console.log('service worker registration failed ', error);
+		// 	});
+
+		// } else {
+		// 	console.log('service worker is not supported.');
+		// }
+	</script>
 </body>
 </html>
