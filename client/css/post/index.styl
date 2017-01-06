@@ -1,0 +1,43 @@
+.post
+  padding-top 4em
+  .wrapper
+    margin 0    
+  &__image
+    background-color red
+    font-size 0
+    margin 0
+    position relative    
+    img
+      width 100%
+  &__information-container
+    background-color rgba(48,48,48, .75)
+    bottom 0
+    color white
+    font-size 1rem
+    position absolute
+    padding 1.5em 2.25em
+    width calc( 100% - 4.5em )
+  &__title
+    font-size 1.2em    
+    margin 0
+  &__content
+    font-family secondaryFont
+    background white
+    padding 1em
+    a
+      color primaryColor
+      font-weight 700
+      text-decoration none
+    blockquote
+      background-color backgroundPrimaryColor
+      color textPrimaryColor
+      font-style italic      
+      margin 0
+      padding .3em .5em
+
+@media only screen and (min-width: 640px)  
+  .post
+    .wrapper
+      margin 0 auto
+    &__title
+      font-size 1.875em

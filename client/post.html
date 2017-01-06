@@ -47,20 +47,81 @@
     <div class="wrapper">
       <figure class="post__image" >
         <img src="images/code.jpg" alt="">
-        <figcaption>
-          <h1 class="post__title" >Como organizar tu proyecto para la web</h1>
+        <figcaption class="post__information-container">
           <div class="post__information">
-            <div class="post__tags">
-
-            </div>
-            <div class="post__creation-date">
-
-            </div>
+            <h1 class="post__title" >Como organizar tu proyecto para la web</h1>
+            <div class="post__tags tags">
+              <span class="tags__item tags__item--firebase" >#Firebase</span>
+              <span class="tags__item tags__item--angular" >#Angular</span>
+            </div>  
           </div>          
+          <div class="post__creation-date">
+
+          </div>
         </figcaption>
       </figure>
       <div class="post__content">
+        <div class="otro">
 
+          <p>Muchas personas saben crear <strong>páginas web</strong> pero son muy pocas las que saben estructurar correctamente su proyecto para que sea <strong>mantenible</strong>. Aquí te dejo algunos consejos, que me ayudaron a desarrollarlos de manera eficiente.</p>
+<h3>A tener en cuenta</h3>
+<p>Este artículo formará parte de una serie de <strong>artículos básicos</strong> relacionados a <strong>cómo organizar tu proyecto para la web</strong> y si eres alguien que tiene mucha experiencia, te pido puedas compartir tus experiencias o enviarme alguna sugerencia sobre el artículo por Twitter: @juliosguz</p>
+<h3>1.- Git y GitHub serán siempre tus mejores amigos</h3>
+<p>Cada vez que inicies un proyecto, <strong>DEBES (Y NO ES OPCIONAL)</strong>, crear un repositorio usando <strong>Git</strong> (software de control de versiones), para luego subir este proyecto a una plataforma en la <strong>nube</strong>, esta plataforma se llama <strong>GitHub</strong>.
+El uso de esta plataforma es <strong>gratuita para proyecto publicos</strong> pero también puedes tener proyectos privados pagando 7usd mensuales.</p>
+<p>Pero, si buscas una opción <strong>privada y gratuita</strong> puedes usar Bitbucket.
+Usando un repositorio(seria mas o menos la carpeta de tu proyecto con una carpeta oculta donde se guarda el registro de todo lo que hagas) y un lugar donde guardarlo, para que no lo tengas en tu PC o portátil, podrás tener acceso a:</p>
+<p>Un historial de los cambios que hayas hecho durante todo tiempo de desarrollo. 
+A tu proyecto desde donde sea que estés pero que tengas conexión a internet.</p>
+<blockquote>
+<p>Con esto nunca pasarás por los típicos</p>
+<ul>
+<li>Se murio mi maquina y no guarde mi TESIS </li>
+<li>Mi oficina se incendió y estaba ahí mi portatil, no se que hacer con mi vida.</li>
+<li>No tengo espacio en el disco duro para guardar mis proyectos antiguos</li>
+<li>¿Qué hice la semana en este archivo?</li>
+</ul>
+</blockquote>
+<p>Suena bonito, pero si en este punto estas como: <strong>”WTF @#$$!% que diablos es eso? “yo solo queria saber como nombrar mis archivos”</strong>, calmado, te dejo algunos links al final del post para que los revises o puedes enviarme tu pregunta a <strong>@juliosguz</strong> </p>
+<h3>2.- Las carpetas y archivos si “solo quieres crear el HTML y CSS”</h3>
+<p>Teniendo la carpeta de nuestro proyecto, dentro deberás crear lo siguiente:</p>
+<p>Nada del otro mundo, ¿verdad?
+Pues sí, solo si quieres seguir trabajando de una forma <strong>“tradicional”</strong></p>
+<blockquote>
+<p>mmm y…. ¿Cual seria la forma no tradicional?</p>
+</blockquote>
+<p>Para la web, existen dos opciones más para crear archivos HTML y CSS, esos son Jade y Stylus. Sin ser tan técnicos, ambos te permiten utilizar una especie de lenguaje de programación para escribir código que se transformara en HTML y CSS. </p>
+<blockquote>
+<p>Pero aquí no hablariamos solo de ¿cómo organizar tu proyecto para la web?</p>
+</blockquote>
+<p>Sí y tomando en cuenta esto, mostraré lo que podrías llegar a hacer con Stylus específicamente.</p>
+<h3>3.- La carpeta CSS y que va dentro</h3>
+<p>Tomando como ejemplo este blog, la cantidad de líneas de código en estilos, es bastante pequeña con un máximo de 300 líneas de código. Imaginen que fueran más de mil o dos mil.</p>
+<p>Quizás usando Ctrl + F para buscar dentro de un archivo de texto les podría salvar.</p>
+<p>Ahora teniendo en cuenta que deben editar algo nuevo para un área en específica, que está dentro de la línea “que aún no se acuerdan” de un archivo con más de 3000 líneas de código, el Ctrl + F no te ayudará mucho, pero si tuvieras los estilos de cada página, sección o componente de tu sitio en archivos distintos, seria mucho mas sencillo se ubicarlo y editarlo.</p>
+<p>Es aquí donde entra Stylus.</p>
+<p>Con Stylus pueden crear un <strong>archivo principal(main.styl)</strong> e importar diferentes archivos de las paginas, secciones o componentes de tu sitio.</p>
+<p>Ademas, puedes separar por carpetas los diferentes estilos para paginas o secciones, utilizando nombres bastante descriptivos. Por ejemplo, si tienes una pagina de una categoria especial que se llame “street-style” y tienes secciones internas, puedes crear otros archivos que hagan referencia a esas secciones, asi vas separando de lo general a lo especifico.</p>
+<blockquote>
+<p>Algo complejo, ¿verdad?</p>
+</blockquote>
+<p>Sí, pero debes tomar en cuenta lo siguiente:
+Tienes un proyecto más ordenado
+La forma en la que puedes ubicar el codigo sera mucho mas sencilla de hacerlo
+Y un plus de Stylus, es que escribiras mas rapido y tambien de una forma ordenada, tu codigo css.</p>
+<h2>Lo rescatable</h2>
+<p>Si bien usar Git y Stylus podria ser para algunos el aprender algo nuevo y que “no es comun de usar”, te servira no solamente a tener una buena organización en tu proyecto, sino que podras iniciar a <strong>“trabajar profesionalmente para la web”</strong></p>
+<h2>Enlaces</h2>
+<ul>
+<li><a href="https://git-scm.com/documentation">Tutoriales y videos sobre Git</a></li>
+<li><a href="https://help.github.com/">Ayuda con GitHub</a></li>
+<li><a href="http://jadelang.net/">Crea HTML con Jade</a></li>
+<li><a href="http://stylus-lang.com/">Crea CSS con Stylus</a></li>
+</ul>
+<p>Si tienes algo mas para agregar a esto, dejalo en los comentarios o sino me puedes enviar un mensaje a <strong>@juliosguz</strong></p>
+
+
+        </div>
       </div>      
     </div>
   </article>
